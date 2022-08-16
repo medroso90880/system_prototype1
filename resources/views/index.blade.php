@@ -1,5 +1,4 @@
 <x-layout>
-    <!-- hello world -->
     <x-card>
     <div class="flex flex-col items-center">
         <a href="/register"
