@@ -93,7 +93,7 @@ return new class extends Migration
         });
 
         //creating table for educational background
-        Schema::create('educational_bg_as', function (Blueprint $table){
+        Schema::create('educational_bg', function (Blueprint $table){
             $table->foreignId('personal_info_id');
             $table->string('school_last_attended');
             $table->string('public/private');
@@ -296,7 +296,7 @@ return new class extends Migration
         Schema::dropIfExists('health_physical_devs');
         Schema::dropIfExists('residences');
         Schema::drapIfExists('social_profiles');
-        Schema::dropIfExists('educational_bg_as');
+        Schema::dropIfExists('educational_bgs');
         Schema::dropIfExists('students_self_assessments');
         Schema::dropIfExists('extra_curricular_acts');
         Schema::dropIfExists('vocational_plannings');
