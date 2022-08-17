@@ -52,11 +52,6 @@
             </div>
          </aside>
 
-        <section>
-            
-            <h1>hello bijj</h1>
-
-        </section>
 
     </x-card>
 </x-layout_dashboard>
