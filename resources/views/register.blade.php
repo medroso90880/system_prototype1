@@ -41,6 +41,11 @@
     </x-extra_curricular>
 </x-card>
 
+<x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+    <x-vocational_planning>
+    </x-vocational_planning>
+</x-card>
+
 <x-card class="p-10 rounded max-w-5xl mx-auto mt-24">
     <x-psychological_test>
     </x-psychological_test>
