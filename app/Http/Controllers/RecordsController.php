@@ -15,4 +15,9 @@ class RecordsController extends Controller
     public function reg() {
         return view('register');
     }
+
+    //login
+    public function login() {
+        return view('login');
+    }
 }

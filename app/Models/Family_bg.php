@@ -10,8 +10,7 @@ class Family_bg extends Model
     //protected $table = "Family_bg";
     use HasFactory;
 
-        public function personal_info(): BelongsTo
-        {
+        public function personal_info() {
             return $this->belongsTo(Personal_info::class, 'personal_info_id');
         }
 }
