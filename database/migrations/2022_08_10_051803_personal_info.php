@@ -33,7 +33,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        //creating table for family back ground
+        //creating table for family background
         Schema::create('family_bgs', function (Blueprint $table)
         {
             $table->foreignId('personal_info_id');
@@ -81,14 +81,14 @@ return new class extends Migration
             $table->foreignId('personal_info_id');
             $table->integer('family_home');
             $table->integer('guardians_home');
-            $table->string('school_dormitory');
+            $table->integer('school_dormitory');
             $table->string('others_a');
             $table->integer('public_transport');
             $table->integer('family_vehicle');
-            $table->integer('car-pool');
+            $table->integer('car_pool');
             $table->integer('services');
             $table->string('others_b');
-            $table->string('question_a');
+            $table->string('question');
             $table->timestamps();
         });
 
