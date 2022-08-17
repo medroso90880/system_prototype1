@@ -17,7 +17,15 @@ class Social_profileFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'friends_same_age' => 1,
+            'friends_older' => 1,
+            'friends_younger' => 0,
+            'friends_boys' => 1,
+            'friends_girls' => 1,
+            'friend_other_school' => 1,
+            'friend_this_school' => 0,
+            'list_friends' => $this->faker->text(),
+            'list_talents_hobbies' => $this->faker->text()
         ];
     }
 }
