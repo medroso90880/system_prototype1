@@ -1,3 +1,4 @@
+<x-card class="p-5 rounded max-w-8xl mx-auto mt-8 flex">
 <x-layout_dashboard>
     
 <aside class="w-64 mt-32" aria-label="Sidebar">
@@ -50,5 +51,23 @@
        </ul>
     </div>
  </aside>
- 
+
 </x-layout_dashboard>
+<x-card class="mx-5 my-5 mt-28 pt-4 w-full border-transparent">
+   <div class="flex">
+   <input type="text" name="search" class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
+   placeholder="Search ID number or Name"/>
+   <div class="mt-2 mr-2 ml-5">
+   <button type="submit" class="h-10 w-20 text-white rounded-lg bg-blue-500 hover:bg-blue-800">
+       Search
+   </button>
+   </div>
+   </div>
+<x-card class="p-10 rounded max-w-xs mt-5 ">
+
+   <x-stud_find>
+   </x-stud_find>
+
+</x-card>
+</x-card>  
+</x-card>

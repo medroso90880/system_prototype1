@@ -1,5 +1,5 @@
 <header class="text-center">
-    <h2 class="text-2xl font-bold uppercase mb-6 box-decoration-slice bg-gradient-to-r from-red-500 to-blue-500 text-white px-2 rounded">
+    <h2 class="text-2xl font-bold uppercase mb-6 px-2 rounded">
         HEALTH AND PHYSICAL DEVELOPMENT 
     </h2>
 </header>
