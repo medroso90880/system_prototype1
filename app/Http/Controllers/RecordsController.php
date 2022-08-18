@@ -45,4 +45,7 @@ class RecordsController extends Controller
     public function do() {
         return view('do_user');
     }
+    public function view_student() {
+        return view('view_student_info');
+    }
 }

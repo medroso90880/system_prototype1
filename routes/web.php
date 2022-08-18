@@ -41,3 +41,9 @@ Route::get('/registrar_user',[RecordsController::class,'registrar']);
 Route::get('/do_user',[RecordsController::class,'do']);
 
 
+//search student id or name
+Route::get('/stud_find',[RecordsController::class,'find']);
+
+Route::get('/view_student_info',[RecordsController::class,'view_student']);
+
+
