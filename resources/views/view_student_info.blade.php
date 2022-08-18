@@ -78,19 +78,46 @@
    
    </x-card>
 
-
+{{-- student info, family background, health, residence, educ back, social back, student self assesment, extra curricular, vocational plan, councelor's notes, tardiness records, offense records --}}
 
    </x-card>  
    <div class="flex justify-center mt-20">
          <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-               <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">First Panel</a>
+               <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Personal Informnation</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Second Panel</a>
+               <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Family Background</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Third Panel</a>
+               <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Health Information</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Residence Information</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Educational Background</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">Social Background</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-7" role="tab">Student Self Assesment </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-8" role="tab">Extra Curricular</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-9" role="tab">Vocational Planning</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-10" role="tab">Councelor's Notes</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-11" role="tab">Tardiness Records</a>
+            </li> 
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-12" role="tab">Offenses Records</a>
             </li>
          </ul>
       </div>
@@ -108,16 +135,59 @@
             </div>
             <div class="tab-pane" id="tabs-2" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
-                  <x-social_profile>
-                  </x-social_profile>
+                  <x-family_background>
+                  </x-family_background>
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-3" role="tabpanel">
-               
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
                   <x-health_physical_dev>
                   </x-health_physical_dev>
               </x-card>
+              <div class="tab-pane" id="tabs-4" role="tabpanel">
+               <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+                  <x-residence_info>
+                  </x-residence_info>
+              </x-card>
+            </div>
+            <div class="tab-pane" id="tabs-5" role="tabpanel">
+               <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+                  <x-educ_background>
+                  </x-educ_background>
+              </x-card>
+            </div>
+            <div class="tab-pane" id="tabs-6" role="tabpanel">
+               <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+                  <x-social_profile>
+                  </x-social_profile>
+              </x-card>
+            </div>
+            <div class="tab-pane" id="tabs-7" role="tabpanel">
+               <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+                  <x-student_self_assessment>
+                  </x-student_self_assessment>
+              </x-card>
+            </div>
+            <div class="tab-pane" id="tabs-8" role="tabpanel">
+               <x-card class="p-10 rounded max-w-6xl mx-auto mt-24">
+                  <x-extra_curricular>
+                  </x-extra_curricular>
+              </x-card>
+            </div>
+            <div class="tab-pane" id="tabs-9" role="tabpanel">
+               <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+                  <x-vocational_planning>
+                  </x-vocational_planning>
+              </x-card>
+            </div>
+            <div class="tab-pane" id="tabs-10" role="tabpanel">
+               
+            </div>
+            <div class="tab-pane" id="tabs-11" role="tabpanel">
+               
+            </div>
+            <div class="tab-pane" id="tabs-12" role="tabpanel">
+               
             </div>
          </div>
          </div>
