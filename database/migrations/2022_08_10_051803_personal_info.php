@@ -248,7 +248,7 @@ return new class extends Migration
         Schema::create('psychological_test_profiles', function (Blueprint $table){
             $table->foreignId('personal_info_id');
             //mental
-            $table->longText('culture fair');
+            $table->longText('culture_fair');
             $table->longText('olmat');
             //aptitude
             $table->string('raw_score_a');
@@ -268,10 +268,10 @@ return new class extends Migration
             //personality
             $table->integer('reserve');
             $table->integer('less_inteligent');
-            $table->integer('affected by feelings');
+            $table->integer('affected_by_feelings');
             $table->integer('phlegmatic');
             $table->integer('obedient');
-            $table->integer('discregards_rules');
+            $table->integer('disregards_rules');
             $table->integer('shy');
             $table->integer('tough_minded');
             $table->integer('sober');

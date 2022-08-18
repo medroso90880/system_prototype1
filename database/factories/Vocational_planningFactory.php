@@ -17,7 +17,8 @@ class Vocational_planningFactory extends Factory
     public function definition()
     {
         return [
-            //
+            '1st' => $this->faker->sentence(),
+            '2st' => $this->faker->sentence()
         ];
     }
 }
