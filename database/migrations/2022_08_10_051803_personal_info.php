@@ -33,7 +33,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        //creating table for family back ground
+        //creating table for family background
         Schema::create('family_bgs', function (Blueprint $table)
         {
             $table->foreignId('personal_info_id');
@@ -81,19 +81,19 @@ return new class extends Migration
             $table->foreignId('personal_info_id');
             $table->integer('family_home');
             $table->integer('guardians_home');
-            $table->string('school_dormitory');
+            $table->integer('school_dormitory');
             $table->string('others_a');
             $table->integer('public_transport');
             $table->integer('family_vehicle');
-            $table->integer('car-pool');
+            $table->integer('car_pool');
             $table->integer('services');
             $table->string('others_b');
-            $table->string('question_a');
+            $table->string('question');
             $table->timestamps();
         });
 
         //creating table for educational background
-        Schema::create('educational_bg_as', function (Blueprint $table){
+        Schema::create('educational_bg', function (Blueprint $table){
             $table->foreignId('personal_info_id');
             $table->string('school_last_attended');
             $table->string('public/private');
@@ -296,7 +296,7 @@ return new class extends Migration
         Schema::dropIfExists('health_physical_devs');
         Schema::dropIfExists('residences');
         Schema::drapIfExists('social_profiles');
-        Schema::dropIfExists('educational_bg_as');
+        Schema::dropIfExists('educational_bgs');
         Schema::dropIfExists('students_self_assessments');
         Schema::dropIfExists('extra_curricular_acts');
         Schema::dropIfExists('vocational_plannings');

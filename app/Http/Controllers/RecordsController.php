@@ -17,7 +17,7 @@ class RecordsController extends Controller
     }
 
     //login page
-    public function user() {
+    public function login() {
         return view('login');
     }
 

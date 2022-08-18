@@ -32,6 +32,11 @@ class Family_bgFactory extends Factory
             'contact_number_father' => $this->faker->phoneNumber(),
             'contact_number_mother' => $this->faker->phoneNumber(),
             'marital_status' => $this->faker->company(),
+            'name_sibling' => $this->faker->name(),
+            'age_sibling' => $this->faker->age(),
+            'educational_attain_sibling' => $this->faker->catchPhrase(),
+            'school_attended_sibling' => $this->faker->catchPhrase(),
+            'occupation_sibling' => $this->faker->catchPhrase()
         ];
     }
 }

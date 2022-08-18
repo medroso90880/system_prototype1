@@ -21,7 +21,7 @@ Route::get('/', [RecordsController::class,'index']);
 Route::get('/register',[RecordsController::class,'reg']);
 
 //login
-Route::get('/login',[RecordsController::class,'user']);
+Route::get('/login',[RecordsController::class,'login']);
 
 //student_user page
 Route::get('/student_user',[RecordsController::class,'student']);
