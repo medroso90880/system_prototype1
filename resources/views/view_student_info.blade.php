@@ -151,10 +151,10 @@
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-5" role="tabpanel">
-               <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+               {{-- <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
                   <x-educ_background>
                   </x-educ_background>
-              </x-card>
+              </x-card> --}}
             </div>
             <div class="tab-pane" id="tabs-6" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
