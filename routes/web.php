@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\RecordsController;
 
 /*
@@ -21,29 +22,14 @@ Route::get('/', [RecordsController::class,'index']);
 Route::get('/register',[RecordsController::class,'reg']);
 
 //login
-Route::get('/login',[RecordsController::class,'login']);
+Route::get('/login',[UserController::class,'login']);
 
-//student_user page
-Route::get('/student_user',[RecordsController::class,'student']);
-
-//admin_user page
-Route::get('/admin_user',[RecordsController::class,'admin']);
-
-//guidance_user page
-Route::get('/guidance_user',[RecordsController::class,'guidance']);
+//log in user
+Route::post('/users/authenticate',[UserController::class, 'authenticate']);
+    
+//home page
+Route::get('/home',[RecordsController::class,'home']);
 
 
-//registrar_user page
-Route::get('/registrar_user',[RecordsController::class,'registrar']);
-
-
-//do_user page
-Route::get('/do_user',[RecordsController::class,'do']);
-
-
-//search student id or name
-Route::get('/stud_find',[RecordsController::class,'find']);
-
-Route::get('/view_student_info',[RecordsController::class,'view_student']);
 
 

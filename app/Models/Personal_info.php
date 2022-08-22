@@ -38,4 +38,12 @@ class Personal_info extends Model
     public function psychological_test_profile() {
         return $this->hasMany(Psychological_test_profile::class, 'personal_info_id');
     }
+
+    
+    public function scopeFilter($query, array $filters)
+    {
+        if($filters['search'] ?? false) {
+            $query->where('first_name','like','%' . request('search') . '%');  
+        }
+    }
 }

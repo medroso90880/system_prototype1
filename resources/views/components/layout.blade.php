@@ -26,15 +26,9 @@
                 },
             };
         </script>
-        
         <title>PSHS</title>
     </head>
 <body class="mb-48">
-    <nav class="mb-4 bg-gray-500 text-center
-    flex flex-col items-center justify-center font-bold
- h-24 text-lg">
-            CUMULATIVE RECORDS FORM
-    </nav>
 
 <main>
     {{$slot}}

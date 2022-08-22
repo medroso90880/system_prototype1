@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Personal_info;
 
 class RecordsController extends Controller
 {
@@ -14,11 +15,6 @@ class RecordsController extends Controller
     //register page
     public function reg() {
         return view('register');
-    }
-
-    //login page
-    public function login() {
-        return view('login');
     }
 
      //student_user page
@@ -45,7 +41,12 @@ class RecordsController extends Controller
     public function do() {
         return view('do_user');
     }
+
     public function view_student() {
         return view('view_student_info');
     }
+    public function home() {
+        return view('components.home', [
+        'personal_infos' =>Personal_info::latest()->filter(request(['search']))->paginate(4)]);
+    }   
 }
