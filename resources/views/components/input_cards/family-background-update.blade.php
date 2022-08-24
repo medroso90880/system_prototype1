@@ -68,52 +68,64 @@
             <input type="text" class="border border-gray-200 rounded" />
         </div>
     </div>
+
+
+    <input id='cell1' type="text"/>
+    <input id='cell2' type="text"/>
+    <input id='cell3' type="text"/>
+    <input id='cell4' type="text"/>
+    <input id='cell5' type="text"/>
+    
+    <input type="button" onclick="insRow()" value="Add"/>    
+    <table id="myTable" class="table-fixed border-collapse border-2 border-gray-400 p-5 w-full">
+        <thead>
+            <tr style="background-color: powderblue;">
+              <th class="border border-gray-400 px-0 py-2 w-44">Brother/Sister</th>
+              <th class="border border-gray-400 px-0 py-2 w-44">Age</th>
+              <th class="border border-gray-400 px-0 py-2 w-44">Educational Attainment</th>
+              <th class="border border-gray-400 px-0 py-2 w-44">School</th>
+              <th class="border border-gray-400 px-0 py-2 w-44">Occupation</th>
+            </tr>
+          </thead>
+
+    </table>
+    <br> 
+    
+    
+    
+    <p id="demo"></p>
+    
     <script>
-        function addField( table ){
-
-var tableRef = document.getElementById(table);
-var newRow   = tableRef.insertRow(-1);
-
-var newCell  = newRow.insertCell(0);
-var newElem = document.createElement( 'input' );
-newElem.setAttribute("name", "links");
-newElem.setAttribute("type", "text");
-newCell.appendChild(newElem);
-
-newCell = newRow.insertCell(1);
-newElem = document.createElement( 'input' );
-newElem.setAttribute("name", "keywords");
-newElem.setAttribute("type", "text");
-newCell.appendChild(newElem);
-
-newCell = newRow.insertCell(2);
-newElem = document.createElement( 'input' );
-newElem.setAttribute("name", "violationtype");
-newElem.setAttribute("type", "text");
-newCell.appendChild(newElem);
-
-newCell = newRow.insertCell(3);
-newElem = document.createElement( 'input' );
-newElem.setAttribute("type", "button");
-newElem.setAttribute("value", "Delete Row");
-newElem.setAttribute("onclick", 'SomeDeleteRowFunction(this)')
-newCell.appendChild(newElem);
-
-function myFunction() {
-  document.getElementById("tbl").deleteRow(0);
-}}
+    
+    //For delete row
+    
+    function deleteRow(r)
+    {
+    var i=r.parentNode.parentNode.rowIndex;
+    document.getElementById('myTable').deleteRow(i);
+    }
+    
+    //for insert row
+    
+    function insRow()
+    {
+    var x=document.getElementById('myTable').insertRow(document.getElementById('myTable').rows.length);
+    var a= x.insertCell(0);
+    var b= x.insertCell(1);
+    var c= x.insertCell(3);
+    var d= x.insertCell(4);
+    var e= x.insertCell(5);
+    var f= x.insertCell(6);
+    a.innerHTML=document.getElementById("cell1").value;
+    b.innerHTML=document.getElementById("cell2").value;
+    c.innerHTML=document.getElementById("cell3").value;
+    d.innerHTML=document.getElementById("cell4").value;
+    e.innerHTML=document.getElementById("cell5").value;
+    f.innerHTML='<input type="button" value="Delete" onclick="deleteRow(this)"/>';
+    }
+    
+    
     </script>
-    <div>
-        <table id="tbl">
-            <tr>
-               <td><input type="text" name="links" /></td>
-               <td><input type="text" name="keywords" /></td> 
-               <td><input type="text" name="violationtype" /></td>
-               <td><button onclick="myFunction()">Delete Row</button></td>          
-             </tr>
-         </table>
-         <input type="button" class="button" value="Add another line" onclick="addField('tbl');" />
-     
     </div>
     
 </form>
