@@ -85,5 +85,6 @@
 
    {{-- </x-card>   --}}
 
-   </x-card> <x-nav_info>
+   </x-card> 
+<x-nav_info>
  </x-nav_info>
