@@ -78,15 +78,18 @@
     
     <input type="button" onclick="insRow()" value="Add"/>    
     <table id="myTable" class="table-fixed border-collapse border-2 border-gray-400 p-5 w-full">
-        <thead>
-            <tr style="background-color: powderblue;">
-              <th class="border border-gray-400 px-0 py-2 w-44">Brother/Sister</th>
-              <th class="border border-gray-400 px-0 py-2 w-44">Age</th>
-              <th class="border border-gray-400 px-0 py-2 w-44">Educational Attainment</th>
-              <th class="border border-gray-400 px-0 py-2 w-44">School</th>
-              <th class="border border-gray-400 px-0 py-2 w-44">Occupation</th>
-            </tr>
-          </thead>
+    <thead>
+          <tr style="background-color: powderblue;">
+            <th class="border border-gray-400 px-0 py-2 w-44">Brother/Sister</th>
+            <th class="border border-gray-400 px-0 py-2 w-44">Age</th>
+            <th class="border border-gray-400 px-0 py-2 w-44">Educational Attainment</th>
+            <th class="border border-gray-400 px-0 py-2 w-44">School</th>
+            <th class="border border-gray-400 px-0 py-2 w-44">Occupation</th>
+            <th class="border border-gray-400 px-0 py-2 w-44">Delete</th>
+
+            
+          </tr>
+        </thead>
 
     </table>
     <br> 
@@ -112,16 +115,22 @@
     var x=document.getElementById('myTable').insertRow(document.getElementById('myTable').rows.length);
     var a= x.insertCell(0);
     var b= x.insertCell(1);
-    var c= x.insertCell(3);
-    var d= x.insertCell(4);
-    var e= x.insertCell(5);
-    var f= x.insertCell(6);
+    var c= x.insertCell(2);
+    var d= x.insertCell(3);
+    var e= x.insertCell(4);
+    var del= x.insertCell(5);
+    
     a.innerHTML=document.getElementById("cell1").value;
     b.innerHTML=document.getElementById("cell2").value;
     c.innerHTML=document.getElementById("cell3").value;
     d.innerHTML=document.getElementById("cell4").value;
     e.innerHTML=document.getElementById("cell5").value;
-    f.innerHTML='<input type="button" value="Delete" onclick="deleteRow(this)"/>';
+    del.innerHTML='<input type="button" value="Delete" onclick="deleteRow(this)"/>';
+    document.getElementById("cell1").value = "";
+    document.getElementById("cell2").value = "";
+    document.getElementById("cell3").value = "";
+    document.getElementById("cell4").value = "";
+    document.getElementById("cell5").value = "";
     }
     
     

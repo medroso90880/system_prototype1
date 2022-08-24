@@ -36,7 +36,7 @@
          <x-input_cards.personal-information/>
          </x-card> 
 
-         <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
+         <x-card class="p-10 rounded max-w-6xl mx-auto mt-12">
          <x-input_cards.family-background-update/>
          </x-card>
          
