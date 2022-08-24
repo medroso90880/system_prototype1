@@ -14,7 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('vocational_plannings', function (Blueprint $table) {
-            $table->id();
+            $table->foreignId('personal_info_id');
+            $table->string('1st');
+            $table->string('2st');
             $table->timestamps();
         });
     }

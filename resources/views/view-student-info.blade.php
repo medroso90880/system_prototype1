@@ -1,6 +1,4 @@
-     <head>
-      <title>Dashboard</title>
-    </head>
+
    {{-- <x-card class="p-5 rounded max-w-8xl mx-auto mt-8 flex"> --}}
    <x-layout>
       
@@ -55,7 +53,6 @@
        </div>
     </aside> --}}
    
-   </x-layout>
    {{-- <x-card class="mx-5 my-5 mt-20 pt-4 w-full border-transparent"> --}}
       
    <x-card class="rounded max-w-full pt-40 justify-center text-center flex">
@@ -64,8 +61,8 @@
          <img class="justify-center w-60 l-60" src="images/legoshi.jpg"/></a>
      </div>
          <div class="mt-14">
-         <h1 class="text-5xl font-bold uppercase mb-6 px-10">181-01881</h1>
-         <h2 class="text-2xl font-bold uppercase mb-6 px-10">Jasper James Daquila</h2>
+         <h1 class="text-5xl font-bold uppercase mb-6 px-10">{{$PersonalInfo->id}}</h1>
+         <h2 class="text-2xl font-bold uppercase mb-6 px-10">{{$PersonalInfo->first_name}} {{$PersonalInfo->middle_name}} {{$PersonalInfo->last_name}}</h2>
          
          </div>
      </div>
@@ -79,3 +76,4 @@
    </x-card> 
 <x-nav_info>
  </x-nav_info>
+</x-layout>
