@@ -18,11 +18,11 @@ class EducationalBackgroundFactory extends Factory
     {
         return [
             'school_last_attended' => $this->faker->catchPhrase(),
-            'public/private' => $this->faker->sentence(),
+            'public_or_private' => $this->faker->sentence(),
             'school_address' => $this->faker->city(),
-            'coed/exclusive' => $this->faker->sentence(),
-            'honors/awards_received' => $this->faker->sentence(),
-            'secretarian/non-sect' => $this->faker->sentence(),
+            'coed_or_exclusive' => $this->faker->sentence(),
+            'honors_or_awards_received' => $this->faker->sentence(),
+            'secretarian_or_nonsect' => $this->faker->sentence(),
             'grade_level' => $this->faker->sentence(),
             'section' => $this->faker->sentence(),
             'scholarship_status' => $this->faker->sentence(),
