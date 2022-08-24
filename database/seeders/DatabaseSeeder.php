@@ -30,6 +30,10 @@ class DatabaseSeeder extends Seeder
 
         $PersonalInfo = PersonalInfo::factory()->create(); 
 
+        EducationalBackground::factory()->create([
+          'personal_info_id' => $PersonalInfo->id
+        ]);
+
         $user = User::create([
           'name' =>  'jemuel',
           'password' => 'hello',
@@ -37,37 +41,33 @@ class DatabaseSeeder extends Seeder
           'position' => 'admin'          
           ]);
 
-          // HealthPhysicalDev::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
+          HealthPhysicalDev::factory()->create([
+            'personal_info_id' => $PersonalInfo->id
+          ]);
 
-          // Residence::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
+          Residence::factory()->create([
+            'personal_info_id' => $PersonalInfo->id
+          ]);
 
-          // EducationalBackground::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
-
-          // SocialProfile::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
+          SocialProfile::factory()->create([
+            'personal_info_id' => $PersonalInfo->id
+          ]);
           
-          // StudentsSelfAssessment::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
+          StudentsSelfAssessment::factory()->create([
+            'personal_info_id' => $PersonalInfo->id
+          ]);
 
-          // ExtraCurricularActivities::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
+          ExtraCurricularActivities::factory()->create([
+            'personal_info_id' => $PersonalInfo->id
+          ]);
 
-          // Vocational_planning::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
+          VocationalPlanning::factory()->create([
+            'personal_info_id' => $PersonalInfo->id
+          ]);
 
-          // PsychologicalTestProfile::factory()->create([
-          //   'personal_info_id' => $PersonalInfo->id
-          // ]);
+          PsychologicalTestProfile::factory()->create([
+            'personal_info_id' => $PersonalInfo->id
+          ]);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

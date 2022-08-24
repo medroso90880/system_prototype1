@@ -68,7 +68,7 @@
       {{-- TAB 3 --}}
       <div class="tab-pane" id="tabs-3" role="tabpanel">
          <x-card class="p-10 rounded max-w-5xl mx-auto mt-12">
-            <x-input_cards.extra-curricular/>
+            <x-input_cards.extra-curricular-update/>
         </x-card>
       </div>
       
