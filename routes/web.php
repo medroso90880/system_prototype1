@@ -30,6 +30,9 @@ Route::post('/users/authenticate',[UserController::class, 'authenticate']);
 //home page
 Route::get('/home',[RecordsController::class,'home']);
 
+//dashboard
+Route::get('/dashboard',[RecordsController::class,'dashboard']);
+
 
 
 

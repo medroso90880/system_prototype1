@@ -3,6 +3,7 @@
         FAMILY BACKGROUND
     </h2>
 </header>
+
 <form method="POST" action="/listings" enctype="multipart/form-data">
     <div class="flex justify-between font-bold">
         <label for="father" class="inline-block mb-2 ml-64 pl-3">
@@ -34,7 +35,7 @@
         </div>
         <div class="gap-2">
             <div>
-                <label for="mother" class="inline-block py-2 mr-5">
+                <label for="mother" class="inline-block py-2 mr-3 pr-1.5">
                     Educational Attainment</label>
                 <input type="text" class="border border-gray-200 rounded p-2 w-48" name="company"
                     value="{{ old('company') }}" />
@@ -147,4 +148,5 @@
             </ul>
         </div>
     </div>
+    
 </form>
