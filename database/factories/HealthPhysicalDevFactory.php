@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\health_physical_dev>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\HealthPhysicalDev>
  */
-class Health_physical_devFactory extends Factory
+class HealthPhysicalDevFactory extends Factory
 {
     /**
      * Define the model's default state.

@@ -129,63 +129,63 @@
          <div class="tab-content">
             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
-                  {{-- <x-personal_information>
-                  </x-personal_information> --}}
+                  {{-- <x-personal-information>
+                  </x-personal-information> --}}
                   perosonal information
               </x-card> 
             </div>
             <div class="tab-pane" id="tabs-2" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
-                  {{-- <x-family_background>
-                  </x-family_background> --}}
+                  {{-- <x-family-background>
+                  </x-family-background> --}}
                   family background
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-3" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
-                  {{-- <x-health_physical_dev>
-                  </x-health_physical_dev> --}}
+                  {{-- <x-HealthPhysicalDev>
+                  </x-HealthPhysicalDev> --}}
                   health physical dev
               </x-card>
               <div class="tab-pane" id="tabs-4" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
-                  {{-- <x-residence_info>
-                  </x-residence_info> --}}
+                  {{-- <x-residence-info>
+                  </x-residence-info> --}}
                   residence info
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-5" role="tabpanel">
                {{-- <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
-                  {{-- <x-educ_background>
-                  </x-educ_background> --}}
+                  {{-- <x-educ-background>
+                  </x-educ-background> --}}
                   educational bg
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-6" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
-                  {{-- <x-social_profile>
-                  </x-social_profile> --}}
+                  {{-- <x-SocialProfile>
+                  </x-SocialProfile> --}}
                   social profile
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-7" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
-                  {{-- <x-student_self_assessment>
-                  </x-student_self_assessment> --}}
+                  {{-- <x-student-self-assessment>
+                  </x-student-self-assessment> --}}
                   socail profile
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-8" role="tabpanel">
                <x-card class="p-10 rounded max-w-6xl mx-auto mt-24">
-                  {{-- <x-extra_curricular>
-                  </x-extra_curricular> --}}
-                  extra_curricular
+                  {{-- <x-extra-curricular>
+                  </x-extra-curricular> --}}
+                  extra-curricular
               </x-card>
             </div>
             <div class="tab-pane" id="tabs-9" role="tabpanel">
                <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
-                  {{-- <x-vocational_planning>
-                  </x-vocational_planning> --}}
+                  {{-- <x-VocationalPlanning>
+                  </x-VocationalPlanning> --}}
                   vocational planning
               </x-card>
             </div>

@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Vocational_planning extends Model
+class StudentsSelfAssessment extends Model
 {
     use HasFactory;
 
-    public function personal_info(): BelongsTo
+    public function PersonalInfo(): BelongsTo
     {
-        return $this->belongsTo(Personal_info::class, 'personal_info_id');
+        return $this->belongsTo(PersonalInfo::class, 'personal_info_id');
     }
 }

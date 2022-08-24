@@ -4,15 +4,15 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
-use App\Models\Educational_bg;
-use App\Models\extra_curricular_act;
-use App\Models\Health_physical_dev;
-use App\Models\family_bg;
-use App\Models\personal_info;
-use App\Models\Psychological_test_profile;
+use App\Models\EducationalBackground;
+use App\Models\ExtraCurricularActivities;
+use App\Models\HealthPhysicalDev;
+use App\Models\FamilyBackground;
+use App\Models\PersonalInfo;
+use App\Models\PsychologicalTestProfile;
 use App\Models\Residence;
-use App\Models\Social_profile;
-use App\Models\Students_self_assessment;
+use App\Models\SocialProfile;
+use App\Models\StudentsSelfAssessment;
 use App\Models\Vocational_planning;
 use Illuminate\Database\Seeder;
 
@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
          //\App\Models\User::factory(5)->create();
 
 
-        $personal_info = Personal_info::factory()->create(); 
+        $PersonalInfo = PersonalInfo::factory()->create(); 
 
         $user = User::create([
           'name' =>  'jemuel',
@@ -37,36 +37,36 @@ class DatabaseSeeder extends Seeder
           'position' => 'admin'          
           ]);
 
-          // Health_physical_dev::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          // HealthPhysicalDev::factory()->create([
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
 
           // Residence::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
 
-          // Educational_bg::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          // EducationalBackground::factory()->create([
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
 
-          // Social_profile::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          // SocialProfile::factory()->create([
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
           
-          // Students_self_assessment::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          // StudentsSelfAssessment::factory()->create([
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
 
-          // extra_curricular_act::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          // ExtraCurricularActivities::factory()->create([
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
 
           // Vocational_planning::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
 
-          // Psychological_test_profile::factory()->create([
-          //   'personal_info_id' => $personal_info->id
+          // PsychologicalTestProfile::factory()->create([
+          //   'personal_info_id' => $PersonalInfo->id
           // ]);
 
         // \App\Models\User::factory()->create([

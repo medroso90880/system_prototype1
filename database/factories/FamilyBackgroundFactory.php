@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\family_bg>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\FamilyBackground>
  */
-class Family_bgFactory extends Factory
+class FamilyBackgroundFactory extends Factory
 {
     /**
      * Define the model's default state.

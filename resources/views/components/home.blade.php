@@ -7,8 +7,8 @@
 
     @unless(count($personal_infos)==0)
     @if (count($personal_infos)==1)
-    @foreach($personal_infos as $personal_info)
-    <x-student-card :personal_info="$personal_info" />
+    @foreach($personal_infos as $PersonalInfo)
+    <x-student-card :PersonalInfo="$PersonalInfo" />
     @endforeach
     @endif      
     @else

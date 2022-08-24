@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Health_physical_dev extends Model
+class HealthPhysicalDev extends Model
 {
-    //protected $table = 'health_physical_dev';
+    //protected $table = 'HealthPhysicalDev';
     use HasFactory;
 
-    public function personal_info() {
+    public function PersonalInfo() {
         return $this->belongsTo(Listing::class, 'personal_info_id');
     }
 }
