@@ -4,17 +4,17 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
-use App\Models\EducationalBackground;
-use App\Models\ExtraCurricularActivities;
-use App\Models\HealthPhysicalDev;
-use App\Models\FamilyBackground;
-use App\Models\PersonalInfo;
-use App\Models\PsychologicalTestProfile;
 use App\Models\Residence;
+use App\Models\PersonalInfo;
 use App\Models\SocialProfile;
-use App\Models\StudentsSelfAssessment;
-use App\Models\Vocational_planning;
 use Illuminate\Database\Seeder;
+use App\Models\FamilyBackground;
+use App\Models\HealthPhysicalDev;
+use App\Models\VocationalPlanning;
+use App\Models\EducationalBackground;
+use App\Models\StudentsSelfAssessment;
+use App\Models\PsychologicalTestProfile;
+use App\Models\ExtraCurricularActivities;
 
 class DatabaseSeeder extends Seeder
 {

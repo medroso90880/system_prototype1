@@ -14,7 +14,25 @@ return new class extends Migration
     public function up()
     {
         Schema::create('students_self_assessments', function (Blueprint $table) {
-            $table->id();
+            $table->foreignId('personal_info_id');
+            $table->integer('physical_well_being');
+            $table->integer('mental_comprehension');
+            $table->integer('speech_filpino');
+            $table->integer('speech_english');
+            $table->integer('written_communication_skills');
+            $table->integer('personality');
+            $table->integer('character');
+            $table->string('general_make_up');
+            $table->string('statement_1');
+            $table->string('statement_2');
+            $table->string('statement_3');
+            $table->string('statement_4');
+            $table->string('statement_5');
+            $table->string('statement_6');
+            $table->string('statement_7');
+            $table->string('statement_8');
+            $table->string('statement_9'); 
+            $table->string('statement_10');
             $table->timestamps();
         });
     }
