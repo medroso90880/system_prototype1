@@ -24,7 +24,7 @@
         <label class="inline-block py-2 pr-3 pl-8 pr-8">Grade Level</label> 
         <label class="inline-block py-2 pr-3 pl-9 pr-8">Section</label> 
         <label class="inline-block py-2 pr-3 pl-5 pr-1">Scholarship Status</label> 
-        <label class="inline-block py-2 pl-4 pr-3 ">Academic Status</label> 
+        <label class="inline-block py-2 pl-4 pr-1 ">Academic Status</label> 
         <div class="py-1">
                     <input type="text"
                     class="border border-gray-140 rounded w-36"/>

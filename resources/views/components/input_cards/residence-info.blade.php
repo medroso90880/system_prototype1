@@ -22,7 +22,7 @@
         <thead>
           <tr style="background-color: powderblue;">
             <th class="w-400"></th>
-            <th class="border border-gray-400 px-0 py-2 w-44">Grade 7</th>
+            <th class="border border-gray-400 px-14 py-2 w-44">Grade 7</th>
             
           </tr>
         </thead>
@@ -80,7 +80,7 @@
         <thead>
           <tr style="background-color: powderblue;">
             <th class="w-400"></th>
-            <th class="border border-gray-400 px-0 py-2 w-44">Grade 7</th>
+            <th class="border border-gray-400 px-14 py-2 w-44">Grade 7</th>
           </tr>
         </thead>
         <tbody>
