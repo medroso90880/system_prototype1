@@ -42,8 +42,10 @@ class RecordsController extends Controller
         return view('do_user');
     }
 
-    public function dashboard() {
-        return view('view-student-info');
+    public function dashboard(PersonalInfo $PersonalInfo) {
+        return view('view-student-info', [
+            'PersonalInfo' => $PersonalInfo
+        ]);
     }
     public function home() {
         return view('components.home', [

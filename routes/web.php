@@ -31,7 +31,7 @@ Route::post('/users/authenticate',[UserController::class, 'authenticate']);
 Route::get('/home',[RecordsController::class,'home']);
 
 //dashboard
-Route::get('/dashboard',[RecordsController::class,'dashboard']);
+Route::get('/personal-info/{PersonalInfo}',[RecordsController::class,'dashboard']);
 
 
 
