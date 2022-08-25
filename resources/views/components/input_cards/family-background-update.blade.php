@@ -68,7 +68,6 @@
             <input type="text" class="border border-gray-200 rounded" />
         </div>
     </div>
-
     <div class="mb-2">
         
     </div>
@@ -92,49 +91,48 @@
             <th><input type="button" onclick="insRow()" value="Add" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
             w-20 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"/></th>
     </table>
-    
     <br> 
     <p id="demo"></p>
     
     <script>
     
-    //For delete row
-    
-    function deleteRow(r)
-    {
-    var i=r.parentNode.parentNode.rowIndex;
-    document.getElementById('myTable').deleteRow(i);
-    }
-    
-    //for insert row
-    
-    function insRow()
-    {
-    var x=document.getElementById('myTable').insertRow(document.getElementById('myTable').rows.length);
-    var a= x.insertCell(0);
-    var b= x.insertCell(1);
-    var c= x.insertCell(2);
-    var d= x.insertCell(3);
-    var e= x.insertCell(4);
-    var del= x.insertCell(5);
-    var edi= x.insertCell(6);
-    
-    a.innerHTML=document.getElementById("cell1").value;
-    b.innerHTML=document.getElementById("cell2").value;
-    c.innerHTML=document.getElementById("cell3").value;
-    d.innerHTML=document.getElementById("cell4").value;
-    e.innerHTML=document.getElementById("cell5").value;
-    
-    del.innerHTML='<input type="button" value="Delete" class="p-2 bg-blue-700 font-medium rounded-lg text-sm w-20 py-2 text-center rounded-lg rounded " onclick="deleteRow(this)"/>';
-    edi.innerHTML='<input type="button" value="Edit" onclick="btn-edit" class="btn btn-info btn-xs btn-edit"/>';
-    document.getElementById("cell1").value = "";
-    document.getElementById("cell2").value = "";
-    document.getElementById("cell3").value = "";
-    document.getElementById("cell4").value = "";
-    document.getElementById("cell5").value = "";
-    }
-    
-    $("body").on("click", ".btn-edit", function(){  
+        //For delete row
+        
+        function deleteRow(r)
+        {
+        var i=r.parentNode.parentNode.rowIndex;
+        document.getElementById('myTable').deleteRow(i);
+        }
+        
+        //for insert row
+        
+        function insRow()
+        {
+        var x=document.getElementById('myTable').insertRow(document.getElementById('myTable').rows.length);
+        var a= x.insertCell(0);
+        var b= x.insertCell(1);
+        var c= x.insertCell(2);
+        var d= x.insertCell(3);
+        var e= x.insertCell(4);
+        var del= x.insertCell(5);
+        var edi= x.insertCell(6);
+        
+        a.innerHTML=document.getElementById("cell1").value;
+        b.innerHTML=document.getElementById("cell2").value;
+        c.innerHTML=document.getElementById("cell3").value;
+        d.innerHTML=document.getElementById("cell4").value;
+        e.innerHTML=document.getElementById("cell5").value;
+        
+        del.innerHTML='<input type="button" value="Delete" class="p-2 bg-blue-700 font-medium rounded-lg text-sm w-20 py-2 text-center rounded-lg rounded " onclick="deleteRow(this)"/>';
+        edi.innerHTML='<input type="button" value="Edit" onclick="btn-edit" class="btn btn-info btn-xs btn-edit"/>';
+        document.getElementById("cell1").value = "";
+        document.getElementById("cell2").value = "";
+        document.getElementById("cell3").value = "";
+        document.getElementById("cell4").value = "";
+        document.getElementById("cell5").value = "";
+        }
+
+        $("body").on("click", ".btn-edit", function(){  
         var a = $(this).parents("tr").attr('cell1');  
         var b = $(this).parents("tr").attr('cell2');
         var c = $(this).parents("tr").attr('cell3');
@@ -174,7 +172,6 @@
         $(this).parents("tr").find(".btn-update").remove();  
         $(this).parents("tr").find(".btn-cancel").remove();  
     });  
-     
     $("body").on("click", ".btn-update", function(){  
         var a = $(this).parents("tr").find("input[name='edit_cell1']").val();  
         var b = $(this).parents("tr").find("input[name='edit_cell2']").val();  
@@ -198,7 +195,7 @@
         $(this).parents("tr").find(".btn-cancel").remove();  
         $(this).parents("tr").find(".btn-update").remove();  
     });  
-    </script>
-    </div>
+        </script>
+
     
 </form>
