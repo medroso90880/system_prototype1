@@ -62,7 +62,6 @@
              src="{{$PersonalInfo->picture ? asset('storage/' . $PersonalInfo->picture) : asset('images/legoshi.jpg')}}"
              alt=""
          />
-         
          <div class="mt-14">
          <h1 class="text-5xl font-bold uppercase mb-6 px-10">{{$PersonalInfo->id}}</h1>
          <h2 class="text-2xl font-bold uppercase mb-6 px-10">{{$PersonalInfo->first_name}} {{$PersonalInfo->middle_name}} {{$PersonalInfo->last_name}}</h2>
@@ -76,7 +75,7 @@
 
    {{-- </x-card>   --}}
 
-   </x-card> 
+</x-card> 
 <x-nav_info>
  </x-nav_info>
 </x-layout>
