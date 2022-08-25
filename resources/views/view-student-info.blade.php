@@ -57,9 +57,12 @@
       
    <x-card class="rounded max-w-full pt-40 justify-center text-center flex">
    
-      <div class="mb-2">
-         <img class="justify-center w-60 l-60" src="images/legoshi.jpg"/></a>
-     </div>
+         <img
+             class="hidden w-48 mr-6 md:block"
+             src="{{$PersonalInfo->picture ? asset('storage/' . $PersonalInfo->picture) : asset('images/legoshi.jpg')}}"
+             alt=""
+         />
+         
          <div class="mt-14">
          <h1 class="text-5xl font-bold uppercase mb-6 px-10">{{$PersonalInfo->id}}</h1>
          <h2 class="text-2xl font-bold uppercase mb-6 px-10">{{$PersonalInfo->first_name}} {{$PersonalInfo->middle_name}} {{$PersonalInfo->last_name}}</h2>
