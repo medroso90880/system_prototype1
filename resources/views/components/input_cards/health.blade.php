@@ -1,10 +1,11 @@
+<x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
 <header class="text-center">
     <h2 class="text-2xl font-bold uppercase mb-6">
         HEALTH AND PHYSICAL DEVELOPMENT 
     </h2>
 </header>
 
-<form method="POST" action="/listings" enctype="multipart/form-data">
+{{-- <form method="POST" action="/listings" enctype="multipart/form-data"> --}}
     <div class="text-center">
         <label class="inline-block break-normal py-4 ">Do you have any problems with your?</label>
     </div>
@@ -78,4 +79,4 @@
             type="text"
             class="border border-gray-170 rounded p-1 w-200 mr-5">
 </div>
-</form>
+</x-card>

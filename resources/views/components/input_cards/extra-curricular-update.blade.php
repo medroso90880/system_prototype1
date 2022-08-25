@@ -1,11 +1,11 @@
-
+<x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
 <header class="text-center">
     <h2 class="text-2xl font-bold uppercase mb-6">
         EXTRA CURRICULAR ACTIVITIES
     </h2>
 </header>
 
-<form method="POST" action="/listings" enctype="multipart/form-data">
+{{-- <form method="POST" action="/listings" enctype="multipart/form-data"> --}}
 
 <!--POSITION HELD IN SCHOOL/OFF-CAMPUS ORGANIZATIONS-->    
 <div class="text-center">
@@ -430,6 +430,4 @@
 </table>
       
  
-
-    
-</form>
+</x-card>

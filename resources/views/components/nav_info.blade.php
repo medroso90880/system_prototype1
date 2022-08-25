@@ -32,44 +32,41 @@
    <div class="tab-content">
 
       <div class="tab-pane active" id="tabs-1" role="tabpanel">
-         <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
+
          <x-input_cards.personal-information/>
-         </x-card> 
 
-         <x-card class="p-10 rounded max-w-7xl mx-auto mt-12">
-         <x-input_cards.family-background-update/>
-         </x-card>
          
-         <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
-         <x-input_cards.health/>
-         </x-card>
+         <x-input_cards.family-background-update/>
 
-         <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
+         <x-input_cards.health/>
+
+
          <x-input_cards.residence-info/>
+<<<<<<< HEAD
          </x-card>
       
          <x-card class="p-10 rounded max-w-6xl mx-auto mt-12">
          <x-input_cards.education-back-update/>
          </x-card>
+=======
+>>>>>>> 4e3b3281b07d7e3960451dff09e1bed44f631578
 
-         <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
+
+         <x-input_cards.education-back/>
+
          <x-input_cards.social-profile/>
-         </x-card>
+
          
          </div>
 
       {{-- TAB 2 --}}
       <div class="tab-pane" id="tabs-2" role="tabpanel">
-         <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
             <x-input_cards.student-self-assessment/>
-        </x-card>
       </div>
 
       {{-- TAB 3 --}}
       <div class="tab-pane" id="tabs-3" role="tabpanel">
-         <x-card class="p-10 rounded max-w-5xl mx-auto mt-12">
             <x-input_cards.extra-curricular-update/>
-        </x-card>
       </div>
       
       {{-- TAB 4 --}}
@@ -79,9 +76,7 @@
 
       {{-- TAB 5 --}}
       <div class="tab-pane" id="tabs-5" role="tabpanel">
-         <x-card class="p-10 rounded max-w-5xl mx-auto mt-12">
             <x-input_cards.counselor-notes/>
-        </x-card>
       </div>
 
       {{-- TAB 6 --}}

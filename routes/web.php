@@ -24,6 +24,9 @@ Route::get('/register',[RecordsController::class,'reg']);
 //login
 Route::get('/login',[UserController::class,'login']);
 
+//store students info
+Route::post('/register/store',[RecordsController::class,'store']);
+
 //log in user
 Route::post('/users/authenticate',[UserController::class, 'authenticate']);
     
@@ -32,6 +35,8 @@ Route::get('/home',[RecordsController::class,'home']);
 
 //dashboard
 Route::get('/personal-info/{PersonalInfo}',[RecordsController::class,'dashboard']);
+
+
 
 
 
