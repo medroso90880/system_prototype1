@@ -1,4 +1,4 @@
-
+<x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
 
 <header class="text-center">
     <h2 class="text-2xl font-bold uppercase mb-6">
@@ -7,7 +7,7 @@
 </header>
 
 
-<form method="POST" action="/listings" enctype="multipart/form-data">
+{{-- <form method="POST" action="/listings" enctype="multipart/form-data"> --}}
     
     <div class="flex  space-x-4">
         
@@ -122,6 +122,4 @@
         </tbody>
       </table>
  
-
-    
-</form>
+    </x-card>

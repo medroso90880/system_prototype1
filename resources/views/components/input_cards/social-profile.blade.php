@@ -1,3 +1,4 @@
+<x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
 <header class="text-center">
     <h2 class="text-2xl font-bold uppercase mb-6">
         SOCIAL PROFILE
@@ -5,7 +6,7 @@
 </header>
 
 <!--Name-->
-<form method="POST" action="/listings" enctype="multipart/form-data">
+{{-- <form method="POST" action="/listings" enctype="multipart/form-data"> --}}
     <div>
         <h4 class="font-bold uppercase mb-6">Do you have real friends:</h4>
         <div class="px-10 mb-4 flex justify-between">
@@ -70,4 +71,4 @@
              skills, interests or leisure time activities:</h4>
         <input type="Text" class="border border-gray-200 rounded p-2 w-full" name="company"/>
     </div>
-</form>
+</x-card>

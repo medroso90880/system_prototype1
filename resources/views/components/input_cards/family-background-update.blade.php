@@ -1,10 +1,11 @@
+<x-card class="p-10 rounded max-w-7xl mx-auto mt-12">
 <header class="text-center">
     <h2 class="text-2xl font-bold uppercase mb-6">
         FAMILY BACKGROUND
     </h2>
 </header>
 
-<form method="POST" action="/listings" enctype="multipart/form-data">
+{{-- <form method="POST" action="/listings" enctype="multipart/form-data"> --}}
         <div class="gap-2">
             <div>
                 <label for="mother" class="inline-block py-2 mr-24 pr-2">
@@ -71,25 +72,25 @@
     <div class="mb-2">
         
     </div>
-    <table id="myTable w-auto flex" class="w-auto p-5">
+    <table id="myTable" class="p-5">
     <thead>
-          <tr style="background-color: powderblue;" class="text-center w-auto">
-            <th class="border border-gray-400 py-2 w-72">Brother/Sister</th>
-            <th class="border border-gray-400 py-2 w-16">Age</th>
-            <th class="border border-gray-400 py-2 w-72">Educational Attainment</th>
-            <th class="border border-gray-400 py-2 w-60">School</th>
-            <th class="border border-gray-400 py-2 w-64">Occupation</th>
+          <tr style="background-color: powderblue;" class="text-center">
+            <th class="border border-gray-400 py-2 w-60">Brother/Sister</th>
+            <th class="border border-gray-400 py-2 w-20">Age</th>
+            <th class="border border-gray-400 py-2 w-44">Educational Attainment</th>
+            <th class="border border-gray-400 py-2 w-72">School</th>
+            <th class="border border-gray-400 py-2 w-44">Occupation</th>
             {{-- <th></th> --}}
           </tr>
     </thead>
         <tr>
-            <th><input id='cell1' type="text" class="py-1 w-full"/></th>
-            <th><input id='cell2' type="text" class="py-1 w-full"/></th>
-            <th><input id='cell3' type="text" class="py-1 w-full"/></th>
-            <th><input id='cell4' type="text" class="py-1 w-full"/></th>
-            <th><input id='cell5' type="text" class="py-1 w-full"/></th>
+            <th><input id='cell1' type="text" class="py-1 w-60"/></th>
+            <th><input id='cell2' type="text" class="py-1 w-20 "/></th>
+            <th><input id='cell3' type="text" class="py-1 w-44"/></th>
+            <th><input id='cell4' type="text" class="py-1 w-72"/></th>
+            <th><input id='cell5' type="text" class="py-1 w-44"/></th>
             <th><input type="button" onclick="insRow()" value="Add" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
-            w-20 py-2 text-center md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"/></th>
+            w-20 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"/></th>
     </table>
     <br> 
     <p id="demo"></p>
@@ -130,6 +131,4 @@
         document.getElementById("cell5").value = "";
         }
         </script>
-
-    
-</form>
+</x-card>

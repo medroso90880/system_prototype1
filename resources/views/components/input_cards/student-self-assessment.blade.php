@@ -1,3 +1,4 @@
+<x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
 <header class="text-center">
     <h2 class="text-2xl font-bold uppercase mb-10">
         STUDENT'S SELF-ASSESSMENT
@@ -277,3 +278,4 @@
     <label for="statement" class="inline-block">My mother:</label>
     <input type="text" class="border border-gray-200 rounded w-full"/>
 </div>
+</x-card>
