@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GoogleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RecordsController;
@@ -16,23 +17,20 @@ use App\Http\Controllers\RecordsController;
 */
 
 //show main page
-Route::get('/', [RecordsController::class,'index']);
+Route::get('/', [RecordsController::class, 'index']);
 
 //register page
-Route::get('/register',[RecordsController::class,'reg']);
+Route::get('/register', [RecordsController::class, 'reg']);
 
 //login
-Route::get('/login',[UserController::class,'login']);
+Route::get('/login', [UserController::class, 'login']);
 
 //log in user
-Route::post('/users/authenticate',[UserController::class, 'authenticate']);
-    
+Route::post('/users/authenticate', [UserController::class, 'authenticate']);
+
 //home page
-Route::get('/home',[RecordsController::class,'home']);
+Route::get('/home', [RecordsController::class, 'home']);
 
 //dashboard
-Route::get('/personal-info/{PersonalInfo}',[RecordsController::class,'dashboard']);
-
-
-
+Route::get('/personal-info/{PersonalInfo}', [RecordsController::class, 'dashboard']);
 
