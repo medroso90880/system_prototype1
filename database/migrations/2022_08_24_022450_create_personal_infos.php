@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('cell_number');
             $table->integer('age');
-            $table->date('date_of_birth');
+            $table->string('date_of_birth');
             $table->string('place_of_birth');
             $table->string('nationality');
             $table->string('permanent_add');
