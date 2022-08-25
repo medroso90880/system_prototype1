@@ -17,9 +17,10 @@ return new class extends Migration
         {
             $table->id();
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('position');
-            $table->string('password');
+            $table->string('password')->nullable();
+            $table->string('google_id')->nullable();
             $table->timestamps();
         });
     }
