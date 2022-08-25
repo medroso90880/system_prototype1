@@ -43,7 +43,8 @@ class PersonalInfo extends Model
     public function scopeFilter($query, array $filters)
     {
         if($filters['search'] ?? false) {
-            $query->where('first_name','like','%' . request('search') . '%');  
+            $query->where('first_name','like','%' . request('search') . '%')
+                ->orwhere('last_name','like','%' . request('search') . '%'); 
         }
     }
 }
