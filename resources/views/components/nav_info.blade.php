@@ -48,8 +48,8 @@
          <x-input_cards.residence-info/>
          </x-card>
       
-         <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
-         <x-input_cards.education-back/>
+         <x-card class="p-10 rounded max-w-6xl mx-auto mt-12">
+         <x-input_cards.education-back-update/>
          </x-card>
 
          <x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
