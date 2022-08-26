@@ -42,15 +42,10 @@
 
 
          <x-input_cards.residence-info/>
-<<<<<<< HEAD
-         </x-card>
-      
-         <x-card class="p-10 rounded max-w-6xl mx-auto mt-12">
-         <x-input_cards.education-back-update/>
-         </x-card>
-=======
->>>>>>> 4e3b3281b07d7e3960451dff09e1bed44f631578
 
+      
+         <x-input_cards.education-back-update/>
+  
 
          <x-input_cards.education-back/>
 
