@@ -42,13 +42,9 @@
 
 
          <x-input_cards.residence-info/>
-<<<<<<< HEAD
       
          <x-update_cards.education-back/>
-=======
->>>>>>> bf7703a36a35398e1a1ee3d63ac018341f64565f
-
-      
+  
          <x-input_cards.education-back-update/>
   
 
