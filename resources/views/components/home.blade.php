@@ -6,7 +6,7 @@
   <div class="lg:grid justify-center gap-4 space-y-4 md:space-y-0 mx-4">
 
     @unless(count($personal_infos)==0)
-    @if (count($personal_infos)==1)
+    @if (count($personal_infos)>=1)
     @foreach($personal_infos as $PersonalInfo)
     <x-student-card :PersonalInfo="$PersonalInfo" />
     @endforeach

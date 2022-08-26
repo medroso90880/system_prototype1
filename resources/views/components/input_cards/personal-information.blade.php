@@ -1,13 +1,12 @@
-<x-card class="p-10 rounded max-w-2xl mx-auto mt-12">
-<header class="text-center">
-    <h2 class="text-2xl font-bold uppercase mb-6">
-        PERSONAL INFORMATION
-    </h2>
-</header>
+<x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
+    <form method="POST" action="/register/store" enctype="multipart/form-data">
+        @csrf
+        <header class="text-center">
+            <h2 class="text-2xl font-bold uppercase mb-6">
+                PERSONAL INFORMATION
+            </h2>
+        </header>
 
-<!--Name-->
-{{-- <form method="POST" action="/register/store" enctype="multipart/form-data"> --}}
-    {{-- @csrf --}}
     <div class="mb-2 flex justify-center gap-2">
         <div>
             <label for="last_name" class="inline-block mb-2">Family Name</label>
@@ -107,5 +106,12 @@
 
         </div>
     </div>
+    <div class="mb-6 flex justify-center p-10">
+        <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
+            Submit
+        </button>
     </div>
+    </div>
+</form>
 </x-card>
+

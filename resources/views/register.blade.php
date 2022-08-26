@@ -1,14 +1,8 @@
 <x-layout>
-    <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
-        <form method="POST" action="/register/store" enctype="multipart/form-data">
+    <form method="POST" action="/register/store" enctype="multipart/form-data">
+        @csrf
         <x-input_cards.personal-information/>
-        <div class="mb-6 flex justify-center p-10">
-            <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
-                Submit
-            </button>
-        </div>
-    </form>
-    </x-card>
+    <form>
 
     {{-- <x-card class="p-10 rounded max-w-2xl mx-auto mt-24">
         <x-input_cards.family-background/>
