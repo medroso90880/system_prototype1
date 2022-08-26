@@ -36,23 +36,15 @@
          <x-input_cards.personal-information/>
 
          
-         <x-input_cards.family-background-update/>
+         <x-update_cards.family-background/>
 
          <x-input_cards.health/>
 
 
          <x-input_cards.residence-info/>
-<<<<<<< HEAD
-         </x-card>
       
-         <x-card class="p-10 rounded max-w-6xl mx-auto mt-12">
-         <x-input_cards.education-back-update/>
-         </x-card>
-=======
->>>>>>> 4e3b3281b07d7e3960451dff09e1bed44f631578
+         <x-update_cards.education-back/>
 
-
-         <x-input_cards.education-back/>
 
          <x-input_cards.social-profile/>
 
@@ -66,7 +58,7 @@
 
       {{-- TAB 3 --}}
       <div class="tab-pane" id="tabs-3" role="tabpanel">
-            <x-input_cards.extra-curricular-update/>
+            <x-update_cards.extra-curricular/>
       </div>
       
       {{-- TAB 4 --}}

@@ -1,10 +1,10 @@
+<x-card class="p-10 rounded max-w-6xl mx-auto mt-12">
 <header class="text-center">
     <h2 class="text-2xl font-bold uppercase mb-6 px-2 rounded">
         EDUCATIONAL BACKGROUND
     </h2>
 </header>
-
-<form method="POST" action="/listings" enctype="multipart/form-data">
+{{-- <form method="POST" action="/listings" enctype="multipart/form-data"> --}}
 
     <div class="mb-8 justify-center">
     
@@ -22,23 +22,34 @@
                 
     </div>            
     <div class="mb-2 justify-center">
-                <table id="myTableA" class=" border-collapse p-5 w-full">
+                <table id="myTableA" class="border-collapse w-full">
                     <thead>
                           <tr style="background-color: powderblue;" class="text-center">
-                            <th class="border border-gray-400 py-2 w-40">Grade Level</th>
+                            <th class="border border-gray-400 py-2 w-52">Grade Level</th>
                             <th class="border border-gray-400 py-2 w-64">Section</th>
                             <th class="border border-gray-400 py-2 w-80">Scholarship Status</th>
                             <th class="border border-gray-400 py-2 w-80">Academic Status</th>
                             
                           </tr>
                     </thead>
-                        <tr>
-                            <th><input id='cell1A' type="text" class="py-2 w-full"/></th>
-                            <th><input id='cell2A' type="text" class="py-2 w-full "/></th>
-                            <th><input id='cell3A' type="text" class="py-2 w-full"/></th>
-                            <th><input id='cell4A' type="text" class="py-2 w-full"/></th>
-                            <th class="w-4"><input type="button" onclick="insRowA()" value="Add" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
-                            w-12 ml-2 py-2 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"/></th>
+                        <tr >
+                            <th>
+                                <select id="cell1A" class="py-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected>Select Grade Level</option>
+                                    <option value="Grade 7">Grade 7</option>
+                                    <option value="Grade 8">Grade 8</option>
+                                    <option value="Grade 9">Grade 9</option>
+                                    <option value="Grade 10">Grade 10</option>
+                                    <option value="Grade 11">Grade 11</option>
+                                    <option value="Grade 12">Grade 12</option>
+                                </select>
+                            </th>
+                            <td><input id='cell2A' type="text" class="indent-2 py-1 w-full"/></td>
+                            <td><input id='cell3A' type="text" class="indent-2 py-1 w-full"/></td>
+                            <td><input id='cell4A' type="text" class="indent-2 py-1 w-full"/></td>
+                            <td><input type="button" onclick="insRowA()" value="Add" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
+                            w-12 ml-2 py-1 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"/></td>
+                        </tr>
                     </table>
 
                 
@@ -132,9 +143,9 @@
             d.innerHTML=document.getElementById("cell4A").value;
             
             
-            del1.innerHTML='<input type="button" value="Delete" class="p-2 bg-blue-700 font-medium rounded-lg text-sm w-16 py-2 text-center rounded-lg rounded " onclick="deleteRowA(this)"/>';
+            del1.innerHTML='<input type="button" value="Delete" class="text-white bg-red-700 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-12 ml-2 py-1 text-center  dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800" onclick="deleteRowA(this)"/>';
             
-            document.getElementById("cell1A").value = "";
+            document.getElementById("cell1A").value = "Select Grade Level";
             document.getElementById("cell2A").value = "";
             document.getElementById("cell3A").value = "";
             document.getElementById("cell4A").value = "";
@@ -143,5 +154,5 @@
     
          
             </script>
+</x-card>
                 
-</form>
