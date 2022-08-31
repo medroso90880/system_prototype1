@@ -4,13 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Kyslik\ColumnSortable\Sortable;
 
 
 
 class PersonalInfo extends Model
 {
     use HasFactory;
+    use Sortable;
 
+    public $sortable = ['first_name','last_name'];
+    
     public function FamilyBackground() {
         return $this->hasMany(FamilyBackground::class, 'personal_info_id');
     }
