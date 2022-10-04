@@ -14,10 +14,10 @@
                     value="{{ old('company') }}" />
                 <input type="text" class="border border-gray-200 rounded p-2 w-48" name="company"
                     value="{{ old('company') }}" />
-            </div>
+            </div> 
         </div>
         <div class="gap-2">
-            <div>
+            <div>   
                 <label for="mother" class="inline-block py-2 mr-14">
                     Company Address</label>
                 <input type="text" class="border border-gray-200 rounded p-2 w-48" name="company"

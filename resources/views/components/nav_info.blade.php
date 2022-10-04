@@ -4,22 +4,16 @@
          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Personal Informnation</a>
       </li>
       <li class="nav-item">
-         <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Student Self Assesment </a>
+         <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Vocational Planning</a>
       </li>
       <li class="nav-item">
-         <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Extra Curricular</a>
+         <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Councelor's Notes</a>
       </li>
       <li class="nav-item">
-         <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Vocational Planning</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Councelor's Notes</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">Tardiness Records</a>
+         <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Tardiness Records</a>
       </li> 
       <li class="nav-item">
-         <a class="nav-link" data-toggle="tab" href="#tabs-7" role="tab">Offenses Records</a>
+         <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Offenses Records</a>
       </li>
    </ul>
 </div>
@@ -33,50 +27,26 @@
 
       <div class="tab-pane active" id="tabs-1" role="tabpanel">
 
-         <x-input_cards.personal-information/>
+         <x-full-information/>
 
-         
-         <x-input_cards.family-background-update/>
-
-         <x-input_cards.health/>
-
-
-         <x-input_cards.residence-info/>
-
-
-         <x-input_cards.education-back/>
-
-         <x-input_cards.social-profile/>
-
-         
          </div>
 
       {{-- TAB 2 --}}
       <div class="tab-pane" id="tabs-2" role="tabpanel">
-            <x-input_cards.student-self-assessment/>
+         
       </div>
 
       {{-- TAB 3 --}}
       <div class="tab-pane" id="tabs-3" role="tabpanel">
-            <x-input_cards.extra-curricular-update/>
+            <x-input_cards.counselor-notes/>
       </div>
-      
+
       {{-- TAB 4 --}}
       <div class="tab-pane" id="tabs-4" role="tabpanel">
          
       </div>
-
       {{-- TAB 5 --}}
       <div class="tab-pane" id="tabs-5" role="tabpanel">
-            <x-input_cards.counselor-notes/>
-      </div>
-
-      {{-- TAB 6 --}}
-      <div class="tab-pane" id="tabs-6" role="tabpanel">
-         
-      </div>
-      {{-- TAB 7 --}}
-      <div class="tab-pane" id="tabs-7" role="tabpanel">
          
       </div>
       
