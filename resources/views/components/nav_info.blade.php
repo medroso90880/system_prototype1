@@ -29,6 +29,25 @@
 
          <x-full-information/>
 
+<<<<<<< HEAD
+=======
+         
+         <x-update_cards.family-background/>
+
+         <x-input_cards.health/>
+
+
+         <x-input_cards.residence-info/>
+      
+         <x-update_cards.education-back/>
+  
+         <x-input_cards.education-back-update/>
+  
+
+         <x-input_cards.social-profile/>
+
+         
+>>>>>>> f503581d8e0cbee45d0d4bcc8567c04fcccd0aab
          </div>
 
       {{-- TAB 2 --}}
@@ -38,7 +57,11 @@
 
       {{-- TAB 3 --}}
       <div class="tab-pane" id="tabs-3" role="tabpanel">
+<<<<<<< HEAD
             <x-input_cards.counselor-notes/>
+=======
+            <x-update_cards.extra-curricular/>
+>>>>>>> f503581d8e0cbee45d0d4bcc8567c04fcccd0aab
       </div>
 
       {{-- TAB 4 --}}

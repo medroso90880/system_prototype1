@@ -50,7 +50,7 @@ class RecordsController extends Controller
     }
     public function home() {
         return view('components.home', [
-        'personal_infos' =>PersonalInfo::latest()->filter(request(['search']))->paginate(4)]);
+        'personal_infos' =>PersonalInfo::sortable('first_name')->filter(request(['search']))->paginate(4)]);
     } 
     //store students info
     public function store(Request $request) {
